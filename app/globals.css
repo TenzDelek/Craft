@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.testimonials-container:has(.testimonial-item:hover) .testimonial-item:not(:hover) {
+  filter: blur(4px);
+  opacity: 0.4;
+}
+
+.testimonial-item {
+  transition: filter 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+}
